@@ -1,0 +1,22 @@
+{
+    "name": "brackets-js-multiline",
+    "title": "JS Multiline",
+    "version": "1.0.0",
+    "description": "Multiline string concatenation for a selected text or entire text in a html file",
+    "homepage": "https://github.com/axilleasiv/brackets-js-multiline",
+    "author": "Achilleas Kiritsakas akiritsakas@gmail.com",
+    "license": "MIT",
+    "categories":"snippets",
+    "keywords": [
+        "text",
+        "generator"
+    ],
+    "files": [
+        "jsmultiline.js",
+        "main.js",
+        "README.md"
+    ],
+    "engines": {
+        "brackets": ">=0.36.0"
+    }
+}
