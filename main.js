@@ -90,17 +90,22 @@ define(function (require, exports, module) {
 			formattedText = js_multiline.checkFormat(unformattedText, indentChar, indentSize, slash);
 			break;
 			default:
-				return false;
+			return;
         }
 		
         doc.batchOperation(function () {
 			if (isSelection) {
 				doc.replaceRange(formattedText, selection.start, selection.end);
-        	} else {
+				
+				editor._codeMirror.setSelection(selection.start, {
+					'line': selection.end.line,
+					'ch': selection.end.ch + 3
+				});
+				
+			} else {
 				doc.setText(formattedText);
-        	}
-      
-            editor.setCursorPos(cursor);
+			}
+
             editor.setScrollPos(scroll.x, scroll.y);
 			
         });

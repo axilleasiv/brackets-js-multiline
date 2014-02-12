@@ -66,9 +66,11 @@ define(function (require, exports, module) {
 		}
 
 		if (rexFormatted.test(text)) {
-			formatted = text.replace(rexFormatted, '');
-			formatted = formatted.replace(/\t'/g, '\t');
-	
+			formatted = text.replace(rexFormatted, '');			
+			formatted = formatted.replace(/(\t|\s)?'/g, function($0, $1){
+				return $1 ? $1 + '' : $0;
+			});
+			
 			return formatted.substr(1, formatted.length - 3);
 		} else {
 			text = text.replace(/'/g, '"');
