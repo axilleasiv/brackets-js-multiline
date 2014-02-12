@@ -30,8 +30,7 @@ define(function (require, exports, module) {
 			platform: "mac"
 		},
 		commandSlash = [windowsCommandSlash, macCommandSlash],
-		js_multiline = require('jsmultiline'),
-		settings = JSON.parse(require("text!settings.json"));
+		js_multiline = require('jsmultiline');
 
 	
 	CommandManager.register("JS Multiline Plus", COMMAND_PLUS, run);
