@@ -1,7 +1,7 @@
 {
     "name": "brackets-js-multiline",
     "title": "JS Multiline",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Adds multiline string support for a selected text or entire text in a js or html file by adding backslash per line or by string concatenation",
     "homepage": "https://github.com/axilleasiv/brackets-js-multiline",
     "author": "Achilleas Kiritsakas akiritsakas@gmail.com",
