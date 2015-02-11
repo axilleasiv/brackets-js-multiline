@@ -20,7 +20,7 @@ by adding backslash per line or by string concatenation
 ## Key Bindings - Commands
 
 The default key bindings are "shift+ctrl++" for string concatenation and "shift+ctrl+\",
-to use the not so safe add backslash per line for Windows and "cmd+ctrl++", "cmd+ctrl+\" for Mac
+to use the not so safe add backslash per line for Windows and "shit+cmd++", "shift+cmd+\" for Mac
 
 if the string is already formatted, both two commands will unformat the string to the
 initial state
